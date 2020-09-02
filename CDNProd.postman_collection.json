@@ -1,0 +1,142 @@
+{
+	"info": {
+		"_postman_id": "fc241a70-1075-4b3d-a10b-19900e3f2874",
+		"name": "CDN Prod",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getAllUserDetails",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://ccomplete-developer-network.herokuapp.com/listUser/retrieveAllUser",
+					"protocol": "https",
+					"host": [
+						"ccomplete-developer-network",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"listUser",
+						"retrieveAllUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createNewUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"Rahman\",\r\n    \"email\": \"rahman@gmail.com\",\r\n    \"phoneno\": \"0128843656\",\r\n    \"skillset\": \"Developer\",\r\n    \"hobby\": \"Makan\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ccomplete-developer-network.herokuapp.com/listUser/userCreated",
+					"protocol": "https",
+					"host": [
+						"ccomplete-developer-network",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"listUser",
+						"userCreated"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"Aimanhadi\",\r\n    \"email\": \"aiman@gmail.com\",\r\n    \"phoneno\": \"0128843656\",\r\n    \"skillset\": \"Backend\",\r\n    \"hobby\": \"Main PUBG\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ccomplete-developer-network.herokuapp.com/listUser/userUpdate/4714698a-0890-432c-856a-7ef124299dfc",
+					"protocol": "https",
+					"host": [
+						"ccomplete-developer-network",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"listUser",
+						"userUpdate",
+						"4714698a-0890-432c-856a-7ef124299dfc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteUser",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://ccomplete-developer-network.herokuapp.com/listUser/deleteUser/21385c26-5779-4b8f-8fc1-83efcda6a56e",
+					"protocol": "https",
+					"host": [
+						"ccomplete-developer-network",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"listUser",
+						"deleteUser",
+						"21385c26-5779-4b8f-8fc1-83efcda6a56e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getUserDetails",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ccomplete-developer-network.herokuapp.com/listUser/userDetails/b8ae2351-37af-48ed-a290-bc989d5a30b2",
+					"protocol": "https",
+					"host": [
+						"ccomplete-developer-network",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"listUser",
+						"userDetails",
+						"b8ae2351-37af-48ed-a290-bc989d5a30b2"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
