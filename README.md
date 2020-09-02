@@ -1,10 +1,12 @@
 # Complete Developer Network (CDN) - API
 Simple app created with Node.js, and PostgreSql integrating with Angular in the frontend.
+Can refer to https://github.com/amirulhadi/frontend for Frontend repository.
 
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Setup](#setup)
+* [Demo](#demo)
 
 ## General Info
 This project is a a fictional company, CDN - Complete Developer Network is going to build a list of freelancers.
