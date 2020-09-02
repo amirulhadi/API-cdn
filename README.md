@@ -73,5 +73,5 @@ May refer to the Postman Collection for all the method in the API.
 
 
 ## Demo
-https://cdntechnology.netlify.app/userList
+https://cdntechnology.netlify.app
 
