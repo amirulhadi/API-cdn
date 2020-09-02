@@ -3,7 +3,7 @@ const app = express()
 const bodyParser = require("body-parser")
 const morgan = require('morgan')
 const https = require('https')
-
+const port = process.env.PORT || 8000
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: false}))
@@ -23,7 +23,9 @@ app.use(morgan('dev'));
 
 app.use("/listUser", require("./src/controller"))
 
-app.listen(8000, () => {
-    console.log("Listening...")
-})
+app.listen(port, () => console.log('server started on port', port))
+
+// app.listen(port, () => {
+//     console.log("Listening...")
+// })
 
